@@ -12,9 +12,10 @@ export default function  Cart(){
             <div>
             <h2 className="text-5xl underline">Cart</h2>
             <ul className="mt-5 text-left list-disc p-6 w-[500px] h-[200px] overflow-y-scroll">
-            {cartItem && cartItem.map((item,id)=>{
-            return ( <li key={id}>{item.name} - {item.price}</li>)
-        })  }
+            { 
+            cartItem && cartItem.map((item,id)=>{
+            return ( <li key={id}>{item.name} - {item.price}</li>)})  
+            }
             </ul>
             </div>
             <h5 className="text-xl mt-10 ">Total -  ${cartTotal}
